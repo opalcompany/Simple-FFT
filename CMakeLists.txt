@@ -181,8 +181,8 @@ else()
     message(STATUS "FFTW include file was not found, won't build a benchmark test")
 endif()
 
-add_executable(${UNIT_TESTS} ${HEADERS_UNIT_TESTS} ${SOURCES_UNIT_TESTS})
-add_executable(${BENCHMARK_TESTS} ${HEADERS_BENCHMARK_TESTS} ${SOURCES_BENCHMARK_TESTS})
+#add_executable(${UNIT_TESTS} ${HEADERS_UNIT_TESTS} ${SOURCES_UNIT_TESTS})
+#add_executable(${BENCHMARK_TESTS} ${HEADERS_BENCHMARK_TESTS} ${SOURCES_BENCHMARK_TESTS})
 
 if(FFTW_LIB)
     target_link_libraries(${BENCHMARK_TESTS} ${FFTW_LIB})
